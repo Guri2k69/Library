@@ -9,6 +9,11 @@ public class ServiceLayer {
 		
 		
 	}
+
+	public void roleAssigning() {
+		
+		
+	}
 	
 	
 

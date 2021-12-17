@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class LoginController {
+public class Controllers {
 	@Autowired
 	ServiceLayer servicelayer;
 
@@ -14,5 +14,10 @@ public class LoginController {
 	public String loginApi() {
 		servicelayer.login();
 		return "Logged in Succsefuly";
+	}
+	@RequestMapping(method=RequestMethod.POST, value="/role")
+	public String roleAssigning() {
+		servicelayer.roleAssigning();
+		return "you are a student";
 	}
 }
